@@ -10,7 +10,7 @@ branches:
 script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker-compose -f docker-compose-build.yaml build --parallel
-  - docker tag udagram-api-feed georgendirangu/udagram-api-feed:v1 && docker push georgendirangu/udagram-api-feed:v1
-  - docker tag udagram-api-user georgendirangu/udagram-api-user:v1 && docker push georgendirangu/udagram-api-user:v1
-  - docker tag reverseproxy georgendirangu/reverseproxy:v1 && docker push georgendirangu/reverseproxy:v1
-  - docker tag uudagram-frontend georgendirangu/udagram-frontend:v1 && docker push georgendirangu/udagram-frontend:v1
+  - docker tag udagram-api-feed georgendirangu/udagram-api-feed:v1 && docker push georgendirangu/udagram-api-feed:v2
+  - docker tag udagram-api-user georgendirangu/udagram-api-user:v1 && docker push georgendirangu/udagram-api-user:v2
+  - docker tag reverseproxy georgendirangu/reverseproxy:v1 && docker push georgendirangu/reverseproxy:v2
+  - docker tag uudagram-frontend georgendirangu/udagram-frontend:v1 && docker push georgendirangu/udagram-frontend:v2
