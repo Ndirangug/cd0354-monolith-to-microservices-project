@@ -17,12 +17,12 @@ spec:
     spec:
       containers:
         - name: udagram-api-user
-          image: georgendirangu/udagram-api-user:v1
+          image: georgendirangu/udagram-api-user:v2
           ports:
             - containerPort: 8080
           resources:
             requests:
-              memory: "100Mi"
+              memory: "750Mi"
             limits:
               memory: "750Mi"
           env:
